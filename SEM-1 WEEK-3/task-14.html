@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 10; /* Higher value ensures it's above other content */
+    }
+
+    .menu:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu">
+  Hover over me
+  <div class="dropdown-content">
+    <p>Option 1</p>
+    <p>Option 2</p>
+    <p>Option 3</p>
+  </div>
+</div>
+
+</body>
+</html>

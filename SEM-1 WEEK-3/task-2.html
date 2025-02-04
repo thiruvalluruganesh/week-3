@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Display</title>
+    <style>
+        #toggleDiv {
+            display: none;
+            background: lightgray;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="toggleVisibility()">Toggle Div</button>
+    <div id="toggleDiv">This div was hidden but is now visible!</div>
+
+    <script>
+        function toggleVisibility() {
+            let div = document.getElementById("toggleDiv");
+            div.style.display = div.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>

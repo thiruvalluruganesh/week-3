@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="item1">Span 2 columns</div>
+        <div class="item2">Normal</div>
+        <div class="item3">Span 2 rows</div>
+      </div>
+      
+      <style>
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      
+        .item1 {
+          grid-column: span 2;
+        }
+      
+        .item3 {
+          grid-row: span 2;
+        }
+      </style>
+</body>
+</html>

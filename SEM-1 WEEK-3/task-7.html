@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    .sidebar {
+      background-color: #333;
+      color: white;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      height: 2000px; /* for scrolling effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <p>I'm a fixed sidebar!</p>
+  </div>
+  <div class="content">
+    <h1>Main Content</h1>
+    <p>Scroll the page, and the sidebar will stay in place!</p>
+  </div>
+</body>
+</html>
